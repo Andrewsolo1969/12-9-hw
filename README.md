@@ -20,10 +20,14 @@
 
 ![Cluster_creating.PNG](https://github.com/Andrewsolo1969/12-9-hw/blob/main/img/Cluster_creating.PNG)
 
+
 ![CCluster_created.PNG](https://github.com/Andrewsolo1969/12-9-hw/blob/main/img/Cluster_created.PNG)
 
 
+
 Подключение к мастеру и реплике
+
+
 Используйте инструкцию по подключению к кластеру, доступную на вкладке «Обзор»: cкачайте SSL-сертификат и подключитесь к кластеру с помощью утилиты psql, указав hostname всех узлов и атрибут target_session_attrs=read-write.
 
 ![instruction.PNG](https://github.com/Andrewsolo1969/12-9-hw/blob/main/img/instruction.PNG)
@@ -45,10 +49,14 @@ select count(*) from pg_stat_replication;
 
 
 Проверьте работоспособность репликации в кластере
+
 Создайте таблицу и вставьте одну-две строки.
+
 CREATE TABLE test_table(text varchar);
 insert into test_table values('Строка 1');
+
 Выйдите из psql командой \q.
+
 
 ![create_table.PNG](https://github.com/Andrewsolo1969/12-9-hw/blob/main/img/create_table.PNG)
 
